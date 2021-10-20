@@ -1,13 +1,3 @@
-# for a array value of a key
-unflat_json = {'user' :
-			{'Rachel':
-				{'UserID':1717171717,
-				'Email': 'rachel1999@gmail.com',
-				'friends': ['John', 'Jeremy', 'Emily']
-				}
-			}
-			}
-
 # Function for flattening
 # json
 def flatten_json(y):
@@ -37,5 +27,23 @@ def flatten_json(y):
 	flatten(y)
 	return out
 
+
+# for a array value of a key
+unflat_json = {
+  'user': {
+    'Rachel': {
+      'UserID': 1717171717,
+      'Email': 'rachel1999@gmail.com',
+      'friends': [
+        'John',
+        'Jeremy',
+        'Emily'
+      ]
+    }
+  }
+}
+
+
 # Driver code
 print(flatten_json(unflat_json))
+
